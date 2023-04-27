@@ -4,7 +4,7 @@
 
   <br/>
 
-  <h3><b>Hello World First Project</b></h3>
+  <h3><b>The Portfolio</b></h3>
 
 </div>
 
@@ -31,9 +31,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Hello-world] <a name="about-project"></a>
+# 📖 [The-Portfolio] <a name="about-project"></a>
 
-**[Hello-world]** In this project I'm learning how to set a professional riposetry that presents the worke on my project!
+**[The-Portfolio]** In this project, I'm learning how to set up a professional interface and set up my first mobile version portfolio that presents the work on my projects it is still on going and it needs more work but everything is coming together soon!
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -49,7 +49,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Demo on what is linters and how it works]**
+- **[First Mobile Portfolio Project]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -57,7 +57,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://abbas-aljuaifari.github.io/Hello-world/)
+- [Live Demo Link](https://abbas-aljuaifari.github.io/The-Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -79,7 +79,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-git clone https://github.com/Abbas-Aljuaifari/Hello-world.git
+git clone https://github.com/Abbas-Aljuaifari/The-Portfolio.git
 
 ### Install
 
@@ -136,8 +136,9 @@ npx eslint .
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[nav-bar]**
 - [ ] **[contact-form]**
+- [ ] **[project-show-case-form]**
+- [ ] **[buttons]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
