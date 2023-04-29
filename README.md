@@ -49,7 +49,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[First Mobile Portfolio Project]**
+- **[First Mobile Portfolio Project Part||]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,8 +137,7 @@ npx eslint .
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[contact-form]**
-- [ ] **[project-show-case-form]**
-- [ ] **[buttons]**
+- [ ] **[Footer]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

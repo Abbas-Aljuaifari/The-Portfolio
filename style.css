@@ -1,11 +1,12 @@
 :root {
-  --font-round: 'Crete Round', serif;
-  --font-roboto: 'Roboto', sans-serif;
+  --my-font-crete: 'Crete Round', serif;
+  --font-sans: 'Roboto', sans-serif;
   --font-inter: 'Inter', sans-serif;
   --nav-background: #3c3a39;
   --main-background: #1c1a19;
   --font-white: #fff;
   --font-orange: #ff6b00;
+  --font-blue: #091e42;
 }
 
 /* Base */
@@ -37,9 +38,20 @@ ul {
   list-style-type: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.btn:hover {
+  background: #fff5e1;
+  border: 1px solid var(--font-orange);
+  color: var(--font-orange);
+}
+
+.btn:active {
+  background: #e05304;
+  color: var(--font-white);
+}
+
+.btn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
 }
 
 /* Navbar */
@@ -77,7 +89,7 @@ img {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0 20px;
+  padding: 20px;
   background-color: var(--main-background);
   align-items: flex-start;
   line-height: 24px;
@@ -90,7 +102,7 @@ img {
   font-weight: 400;
   font-size: 56px;
   letter-spacing: 0.37px;
-  margin: 10px 0;
+  margin-top: 80px 0;
   line-height: 114%;
 }
 
@@ -100,7 +112,7 @@ img {
   font-size: 24px;
   display: flex;
   align-items: center;
-  margin: 12px 0;
+  margin: 10px 0;
 }
 
 .discription-paragraph {
@@ -108,7 +120,6 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  margin: 12px 0;
 }
 
 .media-icons-container {
@@ -124,8 +135,267 @@ img {
   background-image: url('./images/background-img.png');
   background-repeat: no-repeat;
   position: absolute;
-  left: 60%;
-  top: 55%;
+  justify-self: start;
+  top: 95%;
+  right: 0;
   width: 150px;
   height: 360px;
+  background-position: right;
+}
+
+/* work section */
+.work-section-container {
+  width: 100%;
+  background: var(--font-white);
+  color: var(--main-background);
+  padding: 20px 1.4rem;
+}
+
+.work-title-card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+  margin-bottom: 80px;
+}
+
+.work-title-header {
+  margin-top: 100px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  font-family: var(--font-round);
+  font-style: normal;
+}
+
+.title-separator {
+  width: calc(100% - 0px / 2 + 0.5px);
+}
+
+.gym-fit-img {
+  width: 100%;
+}
+
+.work-card-post {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.post-header {
+  font-size: 32px;
+  font-family: var(--font-round);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+  color: var(--font-blue);
+}
+
+.work-post-description {
+  color: var(--font-blue);
+  font-family: var(--font-inter);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.work-tag-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 12px;
+}
+
+.work-items {
+  box-sizing: border-box;
+  padding: 10px 12px;
+  background: var(--font-white);
+  border: 1px solid #8993a4;
+  font-family: var(--font-inter);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--font-blue);
+}
+
+.project-button {
+  font-family: var(--font-inter);
+  color: var(--font-white);
+  background: var(--font-orange);
+  padding: 12px;
+  gap: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+
+.work-card-holder {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 24px;
+}
+
+.work-card {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(./images/Img-Placeholder-2.png);
+  background-size: cover;
+  padding-top: 72px;
+}
+
+.info-card-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 16px;
+  gap: 12px;
+  color: var(--font-white);
+}
+
+.work-project-header {
+  font-family: var(--font-round);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.work-card-description {
+  font-family: var(--font-inter);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.work-tag-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  background-color: rgba(255, 255, 255, 0.24);
+  font-family: var(--font-inter);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  outline: none;
+}
+
+.work-button-section {
+  margin-top: 22px;
+}
+
+.card-button {
+  padding: 13px 0;
+  background: var(--font-orange);
+  cursor: pointer;
+  font-family: var(--font-inter);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+}
+
+/* About */
+
+.about {
+  text-align: center;
+  background: var(--main-background);
+  padding: 0%;
+  margin: 0%;
+}
+
+.about-me-header {
+  font-family: var(--font-round);
+  color: var(--font-orange);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  padding-top: 100px;
+}
+
+.about-me-description {
+  margin: 20px;
+  text-align: left;
+  font-family: var(--font-inter);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.my-resume-button {
+  margin: 10px 20px;
+  font-family: var(--font-inter);
+  color: var(--font-white);
+  background: var(--font-orange);
+  padding: 12px;
+  gap: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+}
+
+.about-illustration {
+  width: 100%;
+  text-align: right;
+  padding-top: -80px;
+}
+
+.about-line {
+  width: 90%;
+  border: none;
+  margin: 30px auto;
+  border-top: 1px solid white;
+}
+
+.about-separator {
+  width: calc(90% - 0px / 2 + 0.5px);
+  border: 1px solid var(--font-white);
+}
+
+/* SKILLS */
+.my-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 24px 38px;
+  gap: 24px;
+  color: #fff;
+}
+
+.skills-header {
+  font-family: var(--font-inter);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.my-skill-list {
+  font-family: var(--font-inter);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  text-align: center;
 }
