@@ -6,11 +6,9 @@
   --main-background: #1c1a19;
   --font-white: #fff;
   --font-orange: #ff6b00;
-  --font-blue:#091E42;
+  --font-blue: #091e42;
 }
-
 /* Base */
-
 *,
 ::after,
 ::before {
@@ -105,7 +103,6 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  
 }
 
 .media-icons-container {
@@ -245,7 +242,7 @@ ul {
   color: var(--font-white);
 }
 
-.work-project-header  {
+.work-project-header {
   font-family: var(--font-round);
   font-style: normal;
   font-weight: 400;
@@ -376,6 +373,7 @@ ul {
   font-size: 32px;
   line-height: 44px;
 }
+
 .my-skill-list {
   font-family: var(--font-inter);
   font-style: normal;
