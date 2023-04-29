@@ -38,6 +38,22 @@ ul {
   list-style-type: none;
 }
 
+.btn:hover {
+  background: #fff5e1;
+  border: 1px solid var(--font-orange);
+  color: var(--font-orange);
+}
+
+.btn:active {
+  background: #e05304;
+  color: var(--font-white);
+}
+
+.btn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
+
 /* Navbar */
 .header {
   background: var(--nav-background);
