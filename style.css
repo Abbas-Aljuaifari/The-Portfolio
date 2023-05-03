@@ -7,8 +7,8 @@
   --font-white: #fff;
   --font-orange: #ff6b00;
   --font-blue: #091e42;
-  --font-contact-form: #172B4D;
-  --font-black: #000000;
+  --font-contact-form: #172b4d;
+  --font-black: #000;
 }
 
 /* Base */
@@ -197,6 +197,8 @@ ul {
 }
 
 .work-tag-list {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   padding: 0;
   gap: 12px;
@@ -213,8 +215,6 @@ ul {
   font-size: 15px;
   line-height: 20px;
   color: var(--font-blue);
-  float: right;
-  margin: 6px;
 }
 
 .project-button {
@@ -443,7 +443,7 @@ ul {
   padding: 2vh 2vh 0;
 }
 
-.submit-btn { 
+.submit-btn {
   width: 40%;
   background: var(--font-orange);
   padding: 4%;
@@ -470,17 +470,17 @@ ul {
   color: #5b5957;
 }
 
-footer ul{
- justify-content: center;
+footer ul {
+  justify-content: center;
 }
- 
+
 .form-media-icons {
   margin: 0;
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #DFE1E6;
+  border-top: 1px solid #dfe1e6;
   padding-top: 4vh;
   padding-bottom: 4vh;
   color: #505f79;
