@@ -49,7 +49,11 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[First Mobile Portfolio Project Part||]**
+- **[HTML Form]**
+- **[Semantic tags]**
+- **[CSS Flexbox]**
+- **[CSS Grid]**
+- **[Responiveness]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -136,8 +140,10 @@ npx eslint .
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[contact-form]**
-- [ ] **[Footer]**
+- [ ] **[Animation]**
+- [ ] **[Transition]**
+- [ ] **[PC Version]**
+- [ ] **[Javascript]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
