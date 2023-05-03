@@ -438,10 +438,10 @@ ul {
 .contact-form textarea {
   width: 327px;
   height: 114px;
-  background: #FBF8F7;
+  background: #fbf8f7;
   margin: 2vh 0;
   padding: 2vh 2vh 0;
-  font-family: 'Inter';
+  font-family: var(--font-inter);
   font-style: italic;
   font-size: 15px;
 }
