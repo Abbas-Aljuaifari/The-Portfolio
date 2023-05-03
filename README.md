@@ -49,7 +49,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[First Mobile Portfolio Project Part||]**
+- **[First Mobile Portfolio Project Part|||]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
