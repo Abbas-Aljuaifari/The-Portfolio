@@ -7,6 +7,8 @@
   --font-white: #fff;
   --font-orange: #ff6b00;
   --font-blue: #091e42;
+  --font-contact-form: #172B4D;
+  --font-black: #000000;
 }
 
 /* Base */
@@ -94,6 +96,10 @@ ul {
   align-items: flex-start;
   line-height: 24px;
   gap: 12px;
+  background-image: url('./images/background-img.png');
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 115%;
 }
 
 .home-pag-header {
@@ -131,19 +137,8 @@ ul {
   margin: 5px;
 }
 
-.illustration-header {
-  background-image: url('./images/background-img.png');
-  background-repeat: no-repeat;
-  position: absolute;
-  justify-self: start;
-  top: 95%;
-  right: 0;
-  width: 150px;
-  height: 360px;
-  background-position: right;
-}
-
 /* work section */
+
 .work-section-container {
   width: 100%;
   background: var(--font-white);
@@ -202,8 +197,6 @@ ul {
 }
 
 .work-tag-list {
-  display: flex;
-  flex-direction: row;
   align-items: center;
   padding: 0;
   gap: 12px;
@@ -220,6 +213,8 @@ ul {
   font-size: 15px;
   line-height: 20px;
   color: var(--font-blue);
+  float: right;
+  margin: 6px;
 }
 
 .project-button {
@@ -276,9 +271,6 @@ ul {
 }
 
 .work-tag-items {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   padding: 10px 12px;
   background-color: rgba(255, 255, 255, 0.24);
   font-family: var(--font-inter);
@@ -287,6 +279,8 @@ ul {
   font-size: 15px;
   line-height: 20px;
   outline: none;
+  float: right;
+  margin-right: 8px;
 }
 
 .work-button-section {
@@ -374,6 +368,7 @@ ul {
 }
 
 /* SKILLS */
+
 .my-skills {
   display: flex;
   flex-direction: column;
@@ -398,4 +393,103 @@ ul {
   font-size: 22px;
   line-height: 43px;
   text-align: center;
+}
+
+/* contact form */
+
+.contact-section {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background: white;
+  padding: 24px;
+  flex-direction: column;
+}
+
+.contact-section h2 {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  color: #172b4d;
+  text-align: center;
+  font-size: 2em;
+  padding-top: 15vh;
+  margin-bottom: 10vh;
+}
+
+.contact-form {
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form input {
+  width: 100%;
+  border-bottom: 0.5px solid lightgray;
+  padding: 5vh 0 2vh 2vh;
+  margin-bottom: 2vh;
+}
+
+#error-message {
+  color: red;
+  display: block;
+}
+
+.contact-form textarea {
+  width: 100%;
+  height: 20vh;
+  background: #fbf8f7;
+  margin: 2vh 0;
+  padding: 2vh 2vh 0;
+}
+
+.submit-btn { 
+  width: 40%;
+  background: var(--font-orange);
+  padding: 4%;
+  color: var(--font-white);
+  font-size: 1em;
+  border: none;
+  font-family: var(--font-inter);
+  font-weight: 700;
+}
+
+.submit-btn:hover {
+  background: #fff5e1;
+  border: 1px solid var(--font-orange);
+  color: var(--font-orange);
+}
+
+.submit-btn:active {
+  background: #e05304;
+  color: var(--font-white);
+}
+
+.submit-btn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
+
+footer ul{
+ justify-content: center;
+}
+ 
+.form-media-icons {
+  margin: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #DFE1E6;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  color: #505f79;
+  background-color: var(--font-white);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.contac-separator {
+  width: calc(100% - 0px / 2 + 0.5px);
+  border: 1px solid var(--font-black);
 }
