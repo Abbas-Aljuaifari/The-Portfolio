@@ -40,6 +40,11 @@ ul {
   list-style-type: none;
 }
 
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
 .btn:hover {
   background: #fff5e1;
   border: 1px solid var(--font-orange);
@@ -57,6 +62,11 @@ ul {
 }
 
 /* Navbar */
+
+.head-nav-lists {
+  display: none;
+}
+
 .header {
   background: var(--nav-background);
   display: flex;
@@ -102,7 +112,7 @@ ul {
   background-position-y: 115%;
 }
 
-.home-pag-header {
+.home-page-header {
   font-family: var(--font-round);
   color: var(--font-orange);
   font-weight: 400;
@@ -436,8 +446,8 @@ ul {
 }
 
 .contact-form textarea {
-  width: 327px;
-  height: 114px;
+  width: 100%;
+  height: 20vh;
   background: #fbf8f7;
   margin: 2vh 0;
   padding: 2vh 2vh 0;
@@ -495,4 +505,206 @@ footer ul {
 .contac-separator {
   width: calc(100% - 0px / 2 + 0.5px);
   border: 1px solid var(--font-black);
+}
+
+@media screen and (min-width: 768px) {
+  .head-nav-lists {
+    display: flex;
+    flex-direction: row;
+    font-family: var(--font-inter);
+    font-size: 15px;
+    line-height: 20px;
+    margin-right: 10px;
+  }
+
+  .head-nav-lists li {
+    padding: 10px;
+  }
+
+  .my-logo {
+    margin-left: 55px;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .home-section {
+    display: flex;
+    background-image: url('./images/Illustration-header.svg');
+    background-size: 42%;
+    background-position-x: 100%;
+    background-position-y: 61%;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .home-page {
+    width: 50vw;
+    margin-left: 4em;
+    gap: 1em;
+  }
+
+  .home-page-header {
+    font-style: normal;
+    font-size: 72px;
+    line-height: 82px;
+  }
+
+  .media-icons-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .work-title-card {
+    margin-top: 100px;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .work-card-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .work-title-header {
+    margin: 0;
+    color: var(--font-blue);
+  }
+
+  .title-separator {
+    width: 100%;
+  }
+
+  .work-card-holder {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.4rem;
+    row-gap: 3.7rem;
+    margin: auto;
+  }
+
+  .work-card {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .card-button {
+    display: none;
+  }
+
+  .about-me-section {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-me-sub-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 110px 0;
+    gap: 24px;
+    margin-left: 50px;
+  }
+
+  .about-me-header {
+    line-height: 82px;
+  }
+
+  .about-me-description {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .my-resume-button {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .about-illustration img {
+    display: none;
+  }
+
+  .about-illustration {
+    margin: 110px 0;
+    background: url('./images/illustration-about me.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .my-skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 52px;
+    padding: 130px 0;
+    gap: 152px;
+  }
+
+  .my-skills ul li {
+    text-align: start;
+  }
+
+  .contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .contact-section h2 {
+    font-style: normal;
+    line-height: 52px;
+    display: flex;
+    align-items: start;
+    color: #262626;
+  }
+
+  .contact-form {
+    width: 90%;
+    margin-top: 81px;
+    margin-bottom: 54px;
+    justify-content: center;
+  }
+
+  textarea::placeholder {
+    font-style: italic;
+    color: var(--main-background);
+  }
+
+  .submit-btn {
+    padding: 12px;
+    gap: 10px;
+    align-self: start;
+    width: 125px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* main */
+
+  .home-page-header {
+    font-size: 72px;
+    line-height: 82px;
+    font-style: normal;
+  }
+
+  .discription-header {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .discription-paragraph {
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 32px;
+  }
+
+  .work-card-holder {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .my-skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

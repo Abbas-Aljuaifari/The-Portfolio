@@ -33,7 +33,7 @@
 
 # 📖 [The-Portfolio] <a name="about-project"></a>
 
-**[The-Portfolio]** In this project, I'm learning how to set up a professional interface and set up my first mobile version portfolio that presents the work on my projects it is still on going and it needs more work but everything is coming together soon!
+**[The-Portfolio]** In this project, I'm learning how to set up a professional interface and set up my first mobile version portfolio and Desktop Version that presents the work on my projects it is still on going and it needs more work but everything is coming together soon!
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -142,7 +142,6 @@ npx eslint .
 
 - [ ] **[Animation]**
 - [ ] **[Transition]**
-- [ ] **[PC Version]**
 - [ ] **[Javascript]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
