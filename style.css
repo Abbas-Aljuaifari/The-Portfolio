@@ -516,15 +516,19 @@ footer ul {
     line-height: 20px;
     margin-right: 10px;
   }
+
   .head-nav-lists li {
     padding: 10px;
   }
+
   .my-logo {
     margin-left: 55px;
   }
+
   .menu-button {
     display: none;
   }
+
   .home-section {
     display: flex;
     background-image: url('./images/Illustration-header.svg');
@@ -535,24 +539,29 @@ footer ul {
     align-items: center;
     justify-content: flex-end;
   }
+
   .home-page {
     width: 50vw;
     margin-left: 4em;
     gap: 1em;
   }
+
   .home-page-header {
     font-style: normal;
     font-size: 72px;
     line-height: 82px;
   }
+
   .media-icons-container {
     display: flex;
     flex-direction: column;
   }
+
   .work-title-card {
     margin-top: 100px;
     display: flex;
   }
+
   .work-card-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -560,6 +569,7 @@ footer ul {
     margin-bottom: 20px;
     padding-left: 8.4%;
   }
+
   .work-card-post {
     display: flex;
     flex-direction: column;
@@ -568,49 +578,49 @@ footer ul {
     width: 80%;
     padding-left: 2%;
   }
+
   .post-header {
-    font-family: 'Crete Round';
+    font-family: var(--font-round);
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 52px;
-    color: #091E42;
+    color: #091e42;
   }
+
   .work-post-description {
-    font-family: 'Inter';
+    font-family: var(--font-inter);
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    color: #091E42;
+    color: #091e42;
   }
+
   .work-title-header {
     margin: 0;
-    font-family: 'Crete Round';
+    font-family: var(--my-font-crete);
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 52px;
-    color: #091E42;
+    color: #091e42;
     padding-left: 8.4%;
     width: 50%;
   }
+
   .title-separator {
     width: 100%;
     padding-right: 10%;
   }
-  .work-card-holder {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2.4rem;
-    row-gap: 3.7rem;
-    margin: auto;
-  }
+
   .work-card {
     width: 23.1rem;
     height: 31.7rem;
     overflow: hidden;
     margin-bottom: 1.9%;
   }
+
   .work-card-holder {
     display: flex;
     flex-wrap: wrap;
@@ -618,18 +628,22 @@ footer ul {
     gap: 2.6%;
     margin-bottom: 9.34%;
   }
+
   .info-card-holder {
     padding-top: 40%;
-    gap: 2rem
+    gap: 2rem;
   }
+
   .card-button {
     display: none;
   }
+
   .about-me-section {
     margin-top: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
   .about-me-sub-section {
     display: flex;
     flex-direction: column;
@@ -639,21 +653,26 @@ footer ul {
     padding-left: 18%;
     padding-top: 4%;
   }
+
   .about-me-header {
     line-height: 82px;
     padding-left: 2.5%;
   }
+
   .about-me-description {
     font-size: 20px;
     line-height: 32px;
   }
+
   .my-resume-button {
     padding: 12px;
     gap: 10px;
   }
+
   .about-illustration img {
     display: none;
   }
+
   .about-illustration {
     margin: 110px 0;
     background: url('./images/illustration-about me.svg');
@@ -661,6 +680,7 @@ footer ul {
     background-size: 85%;
     background-position-x: 100%;
   }
+
   .my-skills {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -668,20 +688,24 @@ footer ul {
     gap: 152px;
     padding-bottom: 9.2%;
   }
+
   .my-skills ul li {
     text-align: start;
     padding-top: 3.5%;
   }
-  .about-separator{
+
+  .about-separator {
     width: 79.9%;
   }
+
   .contact-section {
     display: flex;
     flex-direction: row;
     gap: 30px;
   }
+
   .contact-section h2 {
-    font-family: 'Inter';
+    font-family: var(--font-inter);
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -692,16 +716,18 @@ footer ul {
     padding-top: 7.5%;
     width: 58%;
   }
+
   .contact-form textarea {
     width: 100%;
     height: 7.2rem;
-    background: #FBF8F7;
+    background: #fbf8f7;
     margin: 2vh 0;
     padding: 2vh 2vh 0;
     font-family: var(--font-inter);
     font-style: italic;
     font-size: 15px;
   }
+
   .contact-form {
     width: 90%;
     margin-top: 81px;
@@ -710,10 +736,12 @@ footer ul {
     align-items: start;
     padding-left: 2.4%;
   }
+
   textarea::placeholder {
     font-style: italic;
     color: var(--main-background);
   }
+
   .submit-btn {
     padding: 12px;
     gap: 10px;
@@ -729,18 +757,22 @@ footer ul {
     line-height: 82px;
     font-style: normal;
   }
+
   .discription-header {
     font-size: 32px;
     line-height: 44px;
   }
+
   .discription-paragraph {
     font-style: normal;
     font-size: 1.5rem;
     line-height: 32px;
   }
+
   .work-card-holder {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .my-skills {
     grid-template-columns: repeat(3, 1fr);
   }
