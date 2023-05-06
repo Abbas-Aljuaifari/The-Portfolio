@@ -141,8 +141,7 @@ npx eslint .
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Animation]**
-- [ ] **[Transition]**
+- [ ] **[add more soled animations]**
 - [ ] **[PC Version]**
 - [ ] **[Javascript]**
 
