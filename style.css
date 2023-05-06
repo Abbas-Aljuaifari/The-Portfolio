@@ -559,7 +559,7 @@ footer ul {
 
   .work-title-card {
     margin-top: 100px;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
   }
 
   .work-card-section {
@@ -567,27 +567,71 @@ footer ul {
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
     margin-bottom: 20px;
+    padding-left: 8.4%;
+  }
+
+  .work-card-post {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    width: 80%;
+    padding-left: 2%;
+  }
+
+  .post-header {
+    font-family: var(--font-round);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+  }
+
+  .work-post-description {
+    font-family: var(--font-inter);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #091e42;
   }
 
   .work-title-header {
     margin: 0;
-    color: var(--font-blue);
+    font-family: var(--my-font-crete);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+    padding-left: 8.4%;
+    width: 50%;
   }
 
   .title-separator {
     width: 100%;
-  }
-
-  .work-card-holder {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2.4rem;
-    row-gap: 3.7rem;
-    margin: auto;
+    padding-right: 10%;
   }
 
   .work-card {
-    width: 100%;
+    width: 23.1rem;
+    height: 31.7rem;
     overflow: hidden;
+    margin-bottom: 1.9%;
+  }
+
+  .work-card-holder {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 8.5%;
+    gap: 2.6%;
+    margin-bottom: 9.34%;
+  }
+
+  .info-card-holder {
+    padding-top: 40%;
+    gap: 2rem;
   }
 
   .card-button {
@@ -606,11 +650,13 @@ footer ul {
     align-items: flex-start;
     padding: 110px 0;
     gap: 24px;
-    margin-left: 50px;
+    padding-left: 18%;
+    padding-top: 4%;
   }
 
   .about-me-header {
     line-height: 82px;
+    padding-left: 2.5%;
   }
 
   .about-me-description {
@@ -631,33 +677,55 @@ footer ul {
     margin: 110px 0;
     background: url('./images/illustration-about me.svg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 85%;
+    background-position-x: 100%;
   }
 
   .my-skills {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-left: 52px;
-    padding: 130px 0;
+    padding-left: 9%;
     gap: 152px;
+    padding-bottom: 9.2%;
   }
 
   .my-skills ul li {
     text-align: start;
+    padding-top: 3.5%;
+  }
+
+  .about-separator {
+    width: 79.9%;
   }
 
   .contact-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     gap: 30px;
   }
 
   .contact-section h2 {
+    font-family: var(--font-inter);
     font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
     line-height: 52px;
-    display: flex;
-    align-items: start;
+    text-align: start;
     color: #262626;
+    padding-left: 7.2%;
+    padding-top: 7.5%;
+    width: 58%;
+  }
+
+  .contact-form textarea {
+    width: 100%;
+    height: 7.2rem;
+    background: #fbf8f7;
+    margin: 2vh 0;
+    padding: 2vh 2vh 0;
+    font-family: var(--font-inter);
+    font-style: italic;
+    font-size: 15px;
   }
 
   .contact-form {
@@ -665,6 +733,8 @@ footer ul {
     margin-top: 81px;
     margin-bottom: 54px;
     justify-content: center;
+    align-items: start;
+    padding-left: 2.4%;
   }
 
   textarea::placeholder {
@@ -676,13 +746,12 @@ footer ul {
     padding: 12px;
     gap: 10px;
     align-self: start;
-    width: 125px;
+    width: 124px;
   }
 }
 
 @media screen and (min-width: 992px) {
   /* main */
-
   .home-page-header {
     font-size: 72px;
     line-height: 82px;
