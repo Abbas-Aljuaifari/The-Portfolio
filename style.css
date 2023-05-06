@@ -179,6 +179,11 @@ ul {
 
 .gym-fit-img {
   width: 100%;
+  transition: all 0.6s linear;
+}
+
+.gym-fit-img:hover {
+  transform: scale(1.09);
 }
 
 .work-card-post {
@@ -239,6 +244,7 @@ ul {
   line-height: 24px;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
+  transition: background-color 1s linear;
 }
 
 .work-card-holder {
@@ -357,6 +363,7 @@ ul {
   letter-spacing: 0.03em;
   display: flex;
   align-items: center;
+  transition: background-color 1s linear;
 }
 
 .about-illustration {
