@@ -523,6 +523,11 @@ footer ul {
 
   .my-logo {
     margin-left: 55px;
+    transition: width 2s, height 2s, background-color 2s, rotate 2s;
+  }
+
+  .my-logo:hover {
+    rotate: 360deg;
   }
 
   .menu-button {
