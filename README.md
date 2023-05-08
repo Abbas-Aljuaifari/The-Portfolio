@@ -61,7 +61,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://abbas-aljuaifari.github.io/The-Portfolio/)
+- [Live Demo Link]()
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -141,10 +141,10 @@ npx eslint .
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[ Add more soled animations and transition ]**
-- [ ] **[ PC Version ]**
-- [ ] **[ Javascript ]**
-- [ ] **[ Update my showcase section ]**
+-  **[ Add more soled animations and transition ]**
+-  **[ PC Version ]**
+-  **[ Javascript ]**
+-  **[ Update my showcase section ]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
