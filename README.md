@@ -141,9 +141,11 @@ npx eslint .
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[add more soled animations]**
-- [ ] **[PC Version]**
-- [ ] **[Javascript]**
+- [ ] **[ Add more soled animations and transition ]**
+- [ ] **[ PC Version ]**
+- [ ] **[ Javascript ]**
+- [ ] **[ Update my showcase section ]**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
