@@ -9,6 +9,8 @@
   --font-blue: #091e42;
   --font-contact-form: #172b4d;
   --font-black: #000;
+  --border-menu: #6f6c6b;
+  --font-menu: #fff5e1;
 }
 
 /* Base */
@@ -103,29 +105,43 @@ ul {
   background-color: var(--nav-background);
   display: none;
 }
+
 .ham-menu-options a {
   text-decoration: none;
 }
-.ham-menu-list {
-  color: var(--font-white);
-  font-style: normal;
-  font-weight: 600;
-  font-size: 2rem;
-  list-style: none;
-  padding-top: 1.54rem;
+
+.ham-menu-options {
+  padding-top: 60px;
+  padding-left: 17px;
 }
+
+.ham-menu-list {
+  color: var(--font-menu);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  list-style: none;
+  padding-left: 20px;
+  margin: 20px 20px;
+  border-bottom: 1px solid var(--border-menu);
+  display: block;
+  line-height: 44px;
+}
+
 .cross-button {
   background: none;
   border: none;
   float: right;
-  padding-right: 1.6rem;
-  padding-top: 0.24rem;
+  padding-right: 29px;
+  padding-top: 39px;
   cursor: pointer;
 }
+
 .union-bar {
   padding-right: 6%;
   padding-top: 1.2%;
 }
+
 .menu-options {
   display: none;
 }
