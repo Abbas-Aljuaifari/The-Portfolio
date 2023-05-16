@@ -137,6 +137,16 @@ npx eslint .
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+<!-- COLLABRATIONS-->
+## :busts_in_silhouette: Collabrations <a name="collabrationns"></a>
+
+:bust_in_silhouette: **JansueT**
+- GitHub: [@githubhandle](https://github.com/JansueT)
+- instagram: [@cansuetas](https://instagram.com/cansuetas)
+- twitter: [@cansu8tas](https://twitter.com/cansu8tas)
+- linkedIn: [@LinkedIn](https://www.linkedin.com/in/cansu-tas-467844251/)
+
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
