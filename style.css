@@ -1,7 +1,7 @@
 :root {
-  --my-font-crete: 'Crete Round', serif;
-  --font-sans: 'Roboto', sans-serif;
-  --font-inter: 'Inter', sans-serif;
+  --my-font-crete: "Crete Round", serif;
+  --font-sans: "Roboto", sans-serif;
+  --font-inter: "Inter", sans-serif;
   --nav-background: #3c3a39;
   --main-background: #1c1a19;
   --font-white: #fff;
@@ -9,6 +9,8 @@
   --font-blue: #091e42;
   --font-contact-form: #172b4d;
   --font-black: #000;
+  --border-menu: #6f6c6b;
+  --font-menu: #fff5e1;
 }
 
 /* Base */
@@ -90,8 +92,58 @@ ul {
 }
 
 .open {
-  background: url('./images/Menu-icon.png') no-repeat;
+  background: url("./images/Menu-icon.png") no-repeat;
   padding: 20px;
+}
+
+/* navbar starts */
+
+.ham-bar {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: var(--nav-background);
+  display: none;
+}
+
+.ham-menu-options a {
+  text-decoration: none;
+}
+
+.ham-menu-options {
+  padding-top: 60px;
+  padding-left: 17px;
+}
+
+.ham-menu-list {
+  color: var(--font-menu);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  list-style: none;
+  padding-left: 20px;
+  margin: 20px 20px;
+  border-bottom: 1px solid var(--border-menu);
+  display: block;
+  line-height: 44px;
+}
+
+.cross-button {
+  background: none;
+  border: none;
+  float: right;
+  padding-right: 29px;
+  padding-top: 39px;
+  cursor: pointer;
+}
+
+.union-bar {
+  padding-right: 6%;
+  padding-top: 1.2%;
+}
+
+.menu-options {
+  display: none;
 }
 
 /* main */
@@ -106,7 +158,7 @@ ul {
   align-items: flex-start;
   line-height: 24px;
   gap: 12px;
-  background-image: url('./images/background-img.png');
+  background-image: url("./images/background-img.png");
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 115%;
@@ -118,7 +170,6 @@ ul {
   font-weight: 400;
   font-size: 56px;
   letter-spacing: 0.37px;
-  margin-top: 80px 0;
   line-height: 114%;
 }
 
@@ -258,7 +309,13 @@ ul {
 .work-card {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(./images/Img-Placeholder-2.png);
+  background-image:
+    linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0) 0.75%,
+      rgba(38, 38, 38, 0.9) 61.94%
+    ),
+    url(./images/Img-Placeholder-2.png);
   background-size: cover;
   padding-top: 72px;
 }
@@ -547,7 +604,7 @@ footer ul {
 
   .home-section {
     display: flex;
-    background-image: url('./images/Illustration-header.svg');
+    background-image: url("./images/Illustration-header.svg");
     background-size: 42%;
     background-position-x: 100%;
     background-position-y: 61%;
@@ -692,7 +749,7 @@ footer ul {
 
   .about-illustration {
     margin: 110px 0;
-    background: url('./images/illustration-about me.svg');
+    background: url("./images/illustration-about me.svg");
     background-repeat: no-repeat;
     background-size: 85%;
     background-position-x: 100%;
