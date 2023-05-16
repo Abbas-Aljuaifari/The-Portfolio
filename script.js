@@ -7,6 +7,17 @@ function showMobileMenu() {
 }
 function hideMobileMenu() {
   hamBar.style.display = 'none';
+<<<<<<< HEAD
+=======
+}
+for (const link of scrollToLinks) {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const sectionId = link.getAttribute('href');
+    scrollSection(sectionId);
+    hideMobileMenu();
+  });
+>>>>>>> b91736449cd4f4e7335ebd52eaccb37f18ea2668
 }
 function scrollSection(sectionId) {
   const section = document.getElementById(sectionId);
@@ -14,6 +25,7 @@ function scrollSection(sectionId) {
     section.scrollIntoView({ behavior: 'smooth' });
   }
 }
+<<<<<<< HEAD
 scrollToLinks.forEach((link) => {
   link.addEventListener('click', (event) => {
     event.preventDefault();
@@ -22,5 +34,7 @@ scrollToLinks.forEach((link) => {
     hideMobileMenu();
   });
 });
+=======
+>>>>>>> b91736449cd4f4e7335ebd52eaccb37f18ea2668
 unionButton.addEventListener('click', showMobileMenu);
 crossButton.addEventListener('click', hideMobileMenu);
