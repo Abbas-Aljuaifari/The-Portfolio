@@ -42,6 +42,7 @@
   <ul>
     <li><a href="https://www.w3schools.com/html/default.asp">HTML</a></li>
     <li><a href="https://www.w3schools.com/css/default.asp">Css</a></li>
+    <li><a href="https://www.w3schools.com/javascript/default.asp>JS</a></li>
   </ul>
 </details>
 
@@ -54,6 +55,7 @@
 - **[CSS Flexbox]**
 - **[CSS Grid]**
 - **[Responiveness]**
+-  **[ Javascript ]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -153,7 +155,6 @@ npx eslint .
 
 -  **[ Add more soled animations and transition ]**
 -  **[ PC Version ]**
--  **[ Javascript ]**
 -  **[ Update my showcase section ]**
 
 

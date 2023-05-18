@@ -381,38 +381,45 @@
       <form
         action="https://formspree.io/f/mgebdzwe"
         method="POST"
-        id="contact-form"
+        id="contact-forms"
         class="contact-form"
       >
-        <fieldset>
+        <section class="inputs">
+          <div class="error" id="fullname-error"></div>
+          <label for="fullname">Full Name</label>
           <input
-            class="inputs"
             type="text"
             name="full-name"
             id="fullname"
             maxlength="30"
             placeholder="Full name"
-            required
           />
+        </section>
+        <section class="inputs">
+          <div class="error" id="email-error"></div>
+          <label for="email">Email</label>
           <input
-            class="inputs"
             type="email"
             name="email"
             id="email"
             placeholder="Email address"
-            required
           />
+        </section>
+        <section class="inputs inputs-textarea">
+          <label for="comments">Comments</label>
           <textarea
-            name="comments"
+            name="user-message"
             id="comments"
             maxlength="500"
             placeholder="Write me something..."
-            required
           ></textarea>
-        </fieldset>
-        <button type="submit" class="submit-btn">Get in touch</button>
+        </section>
+        <section class="submit">
+          <button type="submit" class="submit-btn">Get in touch</button>
+        </section>
       </form>
     </section>
+
     <!--Footer-->
     <footer id="form-icons">
       <ul class="form-media-icons">
