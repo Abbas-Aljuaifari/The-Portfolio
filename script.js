@@ -79,3 +79,31 @@ document.addEventListener('DOMContentLoaded', () => {
     validateFormInputs();
   });
 });
+
+// preserve-data-in-the-browser
+
+const nameField = document.querySelector('input[name="inputs-fullname"]');
+const emailField = document.querySelector('input[name="inputs-email"]');
+const messageField = document.querySelector('textarea[name="inputs-textarea"]');
+
+function saveDataToLocalStorage() {
+  const data = {
+    name: nameField.value,
+    email: emailField.value,
+    message: messageField.value,
+  };
+
+  localStorage.setItem('formData', JSON.stringify(data));
+}
+window.addEventListener('load', () => {
+  const savedData = localStorage.getItem('formData');
+  if (savedData) {
+    const data = JSON.parse(savedData);
+    nameField.value = data.name;
+    emailField.value = data.email;
+    messageField.value = data.message;
+  }
+});
+nameField.addEventListener('input', saveDataToLocalStorage);
+emailField.addEventListener('input', saveDataToLocalStorage);
+messageField.addEventListener('input', saveDataToLocalStorage);
