@@ -42,7 +42,7 @@
   <ul>
     <li><a href="https://www.w3schools.com/html/default.asp">HTML</a></li>
     <li><a href="https://www.w3schools.com/css/default.asp">Css</a></li>
-    <li><a href="https://www.w3schools.com/javascript/default.asp>JS</a></li>
+    <li><a href="https://www.w3schools.com/javascript/default.asp">JS</a></li>
   </ul>
 </details>
 
