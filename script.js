@@ -1,52 +1,52 @@
-const unionButton = document.querySelector('.menu-button');
-const crossButton = document.querySelector('.cross-button');
-const hamBar = document.querySelector('.ham-bar');
-const scrollToLinks = document.querySelectorAll('.scroll');
+const unionButton = document.querySelector(".menu-button");
+const crossButton = document.querySelector(".cross-button");
+const hamBar = document.querySelector(".ham-bar");
+const scrollToLinks = document.querySelectorAll(".scroll");
 
 function showMobileMenu() {
-  hamBar.style.display = 'block';
+  hamBar.style.display = "block";
 }
 
 function hideMobileMenu() {
-  hamBar.style.display = 'none';
+  hamBar.style.display = "none";
 }
 
 function scrollSection(sectionId) {
   const section = document.getElementById(sectionId);
   if (section) {
-    section.scrollIntoView({ behavior: 'smooth' });
+    section.scrollIntoView({ behavior: "smooth" });
   }
 }
 
 scrollToLinks.forEach((link) => {
-  link.addEventListener('click', (event) => {
+  link.addEventListener("click", (event) => {
     event.preventDefault();
-    const sectionId = link.getAttribute('href');
+    const sectionId = link.getAttribute("href");
     scrollSection(sectionId);
     hideMobileMenu();
   });
 });
 
-unionButton.addEventListener('click', showMobileMenu);
-crossButton.addEventListener('click', hideMobileMenu);
+unionButton.addEventListener("click", showMobileMenu);
+crossButton.addEventListener("click", hideMobileMenu);
 
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementById('contact-forms');
-  const username = document.getElementById('fullname');
-  const email = document.getElementById('email');
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contact-forms");
+  const username = document.getElementById("fullname");
+  const email = document.getElementById("email");
 
   function setError(elm, msg) {
     const inputControl = elm.parentElement;
-    const errorDiv = inputControl.querySelector('.error');
+    const errorDiv = inputControl.querySelector(".error");
     errorDiv.innerText = msg;
-    inputControl.classList.add('error');
+    inputControl.classList.add("error");
   }
 
   function clearError(elm) {
     const inputControl = elm.parentElement;
-    const errorDiv = inputControl.querySelector('.error');
-    errorDiv.innerText = '';
-    inputControl.classList.remove('error');
+    const errorDiv = inputControl.querySelector(".error");
+    errorDiv.innerText = "";
+    inputControl.classList.remove("error");
   }
 
   function isLowerCase(str) {
@@ -60,21 +60,21 @@ document.addEventListener('DOMContentLoaded', () => {
     clearError(username);
     clearError(email);
 
-    if (usernameValue === '') {
-      setError(username, 'Full Name is required');
+    if (usernameValue === "") {
+      setError(username, "Full Name is required");
     }
 
-    if (emailValue === '') {
-      setError(email, 'Email is required');
+    if (emailValue === "") {
+      setError(email, "Email is required");
     } else if (!isLowerCase(emailValue)) {
-      setError(email, 'Email must be in lowercase');
+      setError(email, "Email must be in lowercase");
     } else {
       // Validation is OK, submit the form
       form.submit();
     }
   }
 
-  form.addEventListener('submit', (event) => {
+  form.addEventListener("submit", (event) => {
     event.preventDefault();
     validateFormInputs();
   });
@@ -85,97 +85,100 @@ document.addEventListener('DOMContentLoaded', () => {
 const projects = [
   {
     main: true,
-    name: 'Multi-Post Stories',
-    image: './images/Img Placeholder.png',
-    image2: './images/ImgPlaceholder.png',
-    image3: './images/modal.png',
+    name: "Multi-Post Stories",
+    image: "./images/Img Placeholder.png",
+    image2: "./images/ImgPlaceholder.png",
+    image3: "./images/modal.png",
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    tags: ['HTML', 'CSS', 'Bootstrap', 'Ruby'],
-    demoLink: '',
-    codeLink: '',
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    tags: ["HTML", "CSS", "Bootstrap", "Ruby"],
+    demoLink: "https://abbas-aljuaifari.github.io/The-Portfolio/",
+    codeLink: "https://github.com/Abbas-Aljuaifari/The-Portfolio",
   },
 
   {
     main: false,
-    name: 'Profesional Art Printing Data More',
-    image: './images/Img-Placeholder-2.png',
-    image2: './images/ImgPlaceholder.png',
-    image3: './images/modal.png',
+    name: "Profesional Art Printing Data More",
+    image: "./images/Img-Placeholder-2.png",
+    image2: "./images/ImgPlaceholder.png",
+    image3: "./images/6-2-vector-free-download-png.png",
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
-    tags: ['HTML', 'Bootstrap', 'Ruby'],
-    demoLink: '',
-    codeLink: '',
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.",
+    tags: ["HTML", "Bootstrap", "Ruby"],
+    demoLink: "https://abbas-aljuaifari.github.io/The-Portfolio/",
+    codeLink: "https://github.com/Abbas-Aljuaifari/The-Portfolio",
   },
   {
     main: false,
-    name: 'Profesional Art Printing Data More',
-    image: './images/Img-Placeholder-2.png',
-    image2: './images/ImgPlaceholder.png',
-    image3: './images/modal.png',
+    name: "Multi-Post Stories",
+    image: "./images/Multipost.png",
+    image2: "./images/ImgPlaceholder.png",
+    image3: "./images/Img Placeholder.png",
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
-    tags: ['HTML', 'Bootstrap', 'Ruby'],
-    demoLink: '',
-    codeLink: '',
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.",
+    tags: ["HTML", "Bootstrap", "Ruby"],
+    demoLink: "https://abbas-aljuaifari.github.io/The-Portfolio/",
+    codeLink: "https://github.com/Abbas-Aljuaifari/The-Portfolio",
   },
   {
     main: false,
-    name: 'Profesional Art Printing Data More',
-    image: './images/Img-Placeholder-2.png',
-    image2: './images/ImgPlaceholder.png',
-    image3: './images/modal.png',
+    name: "Website Portfolio ",
+    image: "./images/webportfolio.png",
+    image2: "./images/ImgPlaceholder.png",
+    image3: "./images/modal.png",
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
-    tags: ['HTML', 'Bootstrap', 'Ruby'],
-    demoLink: '',
-    codeLink: '',
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.",
+    tags: ["HTML", "Bootstrap", "Ruby"],
+    demoLink: "https://abbas-aljuaifari.github.io/The-Portfolio/",
+    codeLink: "https://github.com/Abbas-Aljuaifari/The-Portfolio",
+  },
+
+  {
+    main: false,
+    name: "Profesional Art Printing Data More",
+    image: "./images/Img-Placeholder-2.png",
+    image2: "./images/ImgPlaceholder.png",
+    image3: "./images/6-2-vector-free-download-png.png",
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.",
+    tags: ["HTML", "Bootstrap", "Ruby"],
+    demoLink: "https://abbas-aljuaifari.github.io/The-Portfolio/",
+    codeLink: "https://github.com/Abbas-Aljuaifari/The-Portfolio",
   },
   {
     main: false,
-    name: 'Profesional Art Printing Data More',
-    image: './images/Img-Placeholder-2.png',
-    image2: './images/ImgPlaceholder.png',
-    image3: './images/modal.png',
+    name: "Multi-Post Stories",
+    image: "./images/Multipost.png",
+    image2: "./images/ImgPlaceholder.png",
+    image3: "./images/Img Placeholder.png",
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
-    tags: ['HTML', 'Bootstrap', 'Ruby'],
-    demoLink: '',
-    codeLink: '',
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.",
+    tags: ["HTML", "Bootstrap", "Ruby"],
+    demoLink: "https://abbas-aljuaifari.github.io/The-Portfolio/",
+    codeLink: "https://github.com/Abbas-Aljuaifari/The-Portfolio",
   },
   {
     main: false,
-    name: 'Profesional Art Printing Data More',
-    image: './images/Img-Placeholder-2.png',
-    image2: './images/ImgPlaceholder.png',
-    image3: './images/modal.png',
+    name: "Website Portfolio ",
+    image: "./images/webportfolio.png",
+    image2: "./images/ImgPlaceholder.png",
+    image3: "./images/modal.png",
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
-    tags: ['HTML', 'Bootstrap', 'Ruby'],
-    demoLink: '',
-    codeLink: '',
-  },
-  {
-    main: false,
-    name: 'Profesional Art Printing Data More',
-    image: './images/Img-Placeholder-2.png',
-    image2: './images/ImgPlaceholder.png',
-    image3: './images/modal.png',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
-    tags: ['HTML', 'Bootstrap', 'Ruby'],
-    demoLink: '',
-    codeLink: '',
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.",
+    tags: ["HTML", "Bootstrap", "Ruby"],
+    demoLink: "https://abbas-aljuaifari.github.io/The-Portfolio/",
+    codeLink: "https://github.com/Abbas-Aljuaifari/The-Portfolio",
   },
 ];
 
-const projectsContainer = document.querySelector('#main-grid');
-const projectCardsContainer = document.querySelector('#card-holder');
+const projectsContainer = document.querySelector("#main-grid");
+const projectCardsContainer = document.querySelector("#card-holder");
 
 projects.forEach((project, index) => {
   if (project.main) {
-    const tagsList = project.tags.map((tag) => `<li class="tag-items">${tag}</li>`).join('');
+    const tagsList = project.tags
+      .map((tag) => `<li class="tag-items">${tag}</li>`)
+      .join("");
 
     const projectDisplay = `
       <img class="placeholder-image" src="${project.image}" alt="${project.image2}" />
@@ -197,7 +200,9 @@ projects.forEach((project, index) => {
       </div>
     `;
   } else {
-    const tagsList = project.tags.map((tag) => `<li class="card-items">${tag}</li>`).join('');
+    const tagsList = project.tags
+      .map((tag) => `<li class="card-items">${tag}</li>`)
+      .join("");
 
     const projectCard = `
       <div class="info-holder">
@@ -216,16 +221,16 @@ projects.forEach((project, index) => {
       </div>
     `;
 
-    const cardHolder = document.createElement('div');
-    cardHolder.classList.add('work-card');
+    const cardHolder = document.createElement("div");
+    cardHolder.classList.add("work-card");
     cardHolder.style.backgroundImage = `url(${project.image})`;
     cardHolder.innerHTML = projectCard;
 
     // Add event listener to change background image on hover
-    cardHolder.addEventListener('mouseenter', () => {
+    cardHolder.addEventListener("mouseenter", () => {
       cardHolder.style.backgroundImage = `url(${project.image2})`;
     });
-    cardHolder.addEventListener('mouseleave', () => {
+    cardHolder.addEventListener("mouseleave", () => {
       cardHolder.style.backgroundImage = `url(${project.image})`;
     });
 
@@ -235,7 +240,7 @@ projects.forEach((project, index) => {
 
 //  Deatils Popup window
 
-const popup = document.createElement('div');
+const popup = document.createElement("div");
 function createPopup(project) {
   popup.innerHTML = `
   <div id="popup-container" class="popup-window">
@@ -319,15 +324,15 @@ function createPopup(project) {
   document.body.appendChild(popup);
 }
 
-const buttons = document.querySelectorAll('.card-button, .project-button');
+const buttons = document.querySelectorAll(".card-button, .project-button");
 
 buttons.forEach((button, index) => {
-  button.addEventListener('click', () => {
+  button.addEventListener("click", () => {
     const project = projects[index];
     createPopup(project);
 
-    const xPopup = document.getElementById('x-popup');
-    xPopup.addEventListener('click', () => {
+    const xPopup = document.getElementById("x-popup");
+    xPopup.addEventListener("click", () => {
       popup.remove();
     });
   });
