@@ -42,7 +42,7 @@
   <ul>
     <li><a href="https://www.w3schools.com/html/default.asp">HTML</a></li>
     <li><a href="https://www.w3schools.com/css/default.asp">Css</a></li>
-    <li><a href="https://www.w3schools.com/javascript/default.asp>JS</a></li>
+    <li><a href="https://www.w3schools.com/javascript/default.asp">JS</a></li>
   </ul>
 </details>
 
@@ -55,7 +55,7 @@
 - **[CSS Flexbox]**
 - **[CSS Grid]**
 - **[Responiveness]**
--  **[ Javascript ]**
+- **[ Javascript ]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -64,7 +64,6 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://abbas-aljuaifari.github.io/The-Portfolio/)
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -139,11 +138,12 @@ npx eslint .
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <!-- COLLABRATIONS-->
+
 ## :busts_in_silhouette: Collabrations <a name="collabrationns"></a>
 
 :bust_in_silhouette: **JansueT**
+
 - GitHub: [@githubhandle](https://github.com/JansueT)
 - instagram: [@cansuetas](https://instagram.com/cansuetas)
 - twitter: [@cansu8tas](https://twitter.com/cansu8tas)
@@ -153,10 +153,9 @@ npx eslint .
 
 ## 🔭 Future Features <a name="future-features"></a>
 
--  **[ Add more soled animations and transition ]**
--  **[ PC Version ]**
--  **[ Update my showcase section ]**
-
+- **[ Add more soled animations and transition ]**
+- **[ PC Version ]**
+- **[ Update my showcase section ]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
