@@ -47,11 +47,6 @@ ul {
   align-items: center;
 }
 
-.flex-center {
-  display: flex;
-  align-items: center;
-}
-
 .btn {
   font-family: var(--font-inter);
   color: var(--font-white);
@@ -621,68 +616,68 @@ footer ul {
     display: flex;
     flex-direction: column;
   }
-/* work */
 
-.work-section-container {
-  
-  padding: 3% 7%;
-}
+  /* work */
 
-.work-title-card {
-  grid-template-columns: 1fr 1fr;
-}
+  .work-section-container {
+    padding: 3% 7%;
+  }
 
-.work-title-card:nth-child(1) {
-  grid-template-columns: auto 1fr auto;
-}
+  .work-title-card {
+    grid-template-columns: 1fr 1fr;
+  }
 
-.work-project-display {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-}
+  .work-title-card:nth-child(1) {
+    grid-template-columns: auto 1fr auto;
+  }
 
-.work-title-heading {
-  margin: 0;
-  color: var(--font-blue);
-}
+  .work-project-display {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
 
-.title-separator {
-  width: 100%;
-}
+  .work-title-heading {
+    margin: 0;
+    color: var(--font-blue);
+  }
 
-.image {
-  width: 100%;
-}
+  .title-separator {
+    width: 100%;
+  }
 
-.card-holder {
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 1.4rem;
-}
+  .image {
+    width: 100%;
+  }
 
-.work-card {
-  width: 100%;
-  position: relative;
-  height: 400px;
-}
+  .card-holder {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.4rem;
+  }
 
-.info-holder {
-  position: absolute;
-  bottom: 0;
-}
+  .work-card {
+    width: 100%;
+    position: relative;
+    height: 400px;
+  }
 
-.button-section {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  opacity: 0;
-}
+  .info-holder {
+    position: absolute;
+    bottom: 0;
+  }
 
-.work-card:hover .button-section {
-  opacity: 1;
-}
+  .button-section {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    opacity: 0;
+  }
 
-/* about */
+  .work-card:hover .button-section {
+    opacity: 1;
+  }
+
+  /* about */
   .about-me-section {
     margin-top: 100px;
     display: grid;
@@ -819,11 +814,12 @@ footer ul {
     font-size: 1.5rem;
     line-height: 32px;
   }
-/* work */
-.card-holder {
-  grid-template-columns: repeat(3, 1fr);
-}
-  
+
+  /* work */
+  .card-holder {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .my-skills {
     grid-template-columns: repeat(3, 1fr);
   }
